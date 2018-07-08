@@ -1,0 +1,42 @@
+#git commands
+
+git config --global user.name "Mehavarnan"
+git config --global user.email "test@example.com"
+
+git config --global user.name
+git config --global user.email
+
+git status
+git add text.txt
+git add . (stage all modified/new files)
+git commit -m "Initial Commit"
+
+git branch
+git branch test (create test branch)
+git checkout test (checkout test branch)
+git checkout -b test(creates new branch and checkout)
+
+git merge test
+
+git branch test -d (deleting test branch)
+git branch test -D (for force delete a branch)
+
+git log
+git revert 932cb3cbd623db3405d3d98a362e892119f15804 (rever a particular commit)
+press q (to quit from git log window)
+press Esc :wq (to exit from revert window)
+
+#gitignore
+When not to share files/folders in repository, add folder path and file names in .gitignore file
+
+git rm --cached testing.txt (to remove cache and then commit)
+
+git ls-files (to find list of files in repository)
+
+
+#Adding remote repository and pushing local to remote
+git remote add origin <Url of GitHub repository>.git
+git push -u origin master (to push local master changes to remote origin master)
+
+#to get a clone repository to local
+git clone <Url of the repository>.git
